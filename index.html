@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GLA Portal</title>
+<link rel="stylesheet" href="task01.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav id="navbar">
+
+<div class="logo">GLA Portal</div>
+
+<div class="menu-toggle" id="menu-toggle">☰</div>
+
+<ul class="nav-links" id="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#register">Register</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+
+<!-- ================= HERO ================= -->
+<section id="home" class="hero">
+<h1>Welcome to GLA University Portal</h1>
+<p>Your Academic Dashboard in One Place</p>
+<button onclick="document.querySelector('#about').scrollIntoView({behavior:'smooth'})">
+Explore More
+</button>
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section">
+<h2>About GLA</h2>
+<p>
+GLA University provides quality education, smart digital systems, and modern learning facilities.
+This portal helps students access results, attendance, courses, and updates easily.
+</p>
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+<section id="services" class="section">
+
+<h2>Portal Services</h2>
+
+<div class="cards">
+
+<div class="card">Student Login</div>
+<div class="card">Parent Login</div>
+<div class="card">Faculty Login</div>
+<div class="card">Join Clubs</div>
+
+
+</div>
+<!-- ================= COURSES SECTION ================= -->
+<section id="courses" class="section">
+
+<h2>Our Courses</h2>
+
+<div class="courses-container">
+
+  <!-- B.Tech -->
+  <div class="course-card">
+    <h3>B.Tech</h3>
+    <ul>
+      <li>Computer Science Engineering</li>
+      <li>Information Technology</li>
+      <li>Mechanical Engineering</li>
+      <li>Civil Engineering</li>
+      <li>Electrical Engineering</li>
+      <li>Electronics & Communication</li>
+    </ul>
+  </div>
+
+  <!-- B.Tech Hons -->
+  <div class="course-card">
+    <h3>B.Tech (Hons)</h3>
+    <ul>
+      <li>CSE - Artificial Intelligence</li>
+      <li>CSE - Data Science</li>
+      <li>CSE - Cyber Security</li>
+      <li>ECE - VLSI Design</li>
+    </ul>
+  </div>
+
+  <!-- MBA -->
+  <div class="course-card">
+    <h3>MBA</h3>
+    <ul>
+      <li>Marketing</li>
+      <li>Finance</li>
+      <li>Human Resource</li>
+      <li>Business Analytics</li>
+    </ul>
+  </div>
+
+  <!-- Other Courses -->
+  <div class="course-card">
+    <h3>Other Programs</h3>
+    <ul>
+      <li>BBA</li>
+      <li>LLB</li>
+      <li>B.Pharm</li>
+    </ul>
+  </div>
+
+</div>
+
+</section>
+</section>
+
+<!-- ================= REGISTER SECTION ================= -->
+<section id="register" class="section register-section">
+
+<h2>Student Registration</h2>
+<p>Fill the form below to register for your course</p>
+
+<div class="register-container">
+
+<form class="register-form">
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="tel" placeholder="Phone Number" required>
+
+<select required>
+<option value="">Select Course</option>
+<option>B.Tech</option>
+<option>B.Tech (Hons)</option>
+<option>MBA</option>
+<option>BBA</option>
+<option>LLB</option>
+<option>B.Pharm</option>
+</select>
+
+<input type="password" placeholder="Create Password" required>
+
+<button type="submit">Register Now</button>
+
+</form>
+
+</div>
+
+</section>
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section footer">
+<h2>Contact Us</h2>
+<p>Email: support@gla.ac.in</p>
+<p>Phone: +91 9876543210</p>
+</section>
+
+
+<script src="task01.js"></script>
+
+</body>
+</html>
